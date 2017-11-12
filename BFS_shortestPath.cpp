@@ -72,7 +72,7 @@ struct graph {
 				int curr = v->adj[i];
 				if (!visited[curr]) {
 					visited[curr] = true;
-					dist[curr] = dist[v->key] + 6;
+					dist[curr] = dist[v->key] + 1;    //.... + 6; ??? 
 					queue.push_back(vertices[curr]);
 				}
 			}
